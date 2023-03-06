@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse | Game Over</title>
+    <link rel="icon" type="img/png" href="img/logo.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/mediaqueries.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-img">
+      <a href="index.html"><img src="img/logo-nombre1.png" alt="logo" class="logo"></a>
+    </div>
+    <nav class="navbar"> 
+      <div for="menu-toggle" class="menu-label">
+        <img src="img/menu.svg" alt="menu" class="menu-icon">
+    </div>
+      <ul class="navbar-list">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="index.html#beneficios">Club de Beneficios</a>
+        </li>
+        <li>
+          <a href="index.html#productos">Productos</a>
+        </li>
+        <li>
+          <a href="index.html#contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <main>
+      <section id="registro">
+        <div class="registro-h2">
+          <h2>Ingresá en un mundo de beneficios</h2>
+        </div>
+        <div class="container-registro">
+          <div class="registro-izq">
+            <div class="registro-h3">
+              <h3>Llená el formulario y formá parte de nuestra comunidad</h3>
+            </div>
+            <form class="register-form">
+              <div class="register-input">
+                <label for="register_name">Nombre:</label>
+                <input type="text"id="register_name" class="input_name" placeholder="Tu Nombre">
+                <small></small>
+              </div>
+              <div class="register-input">
+                <label for="register_last">Apellido:</label>
+                <input type="text"id="register_last" class="input_last"placeholder="Tu Apellido">
+                <small></small>
+              </div>
+              <div class="register-input">
+                <label for="register_password">Contraseña:</label>
+                <input type="password"id="register_password" class="input_password" placeholder="Constraseña">
+                <small></small>
+              </div>
+              <div class="register-input">
+                <label for="register_mail">Email:</label>
+                <input type="email" id="register_mail" class="input_mail"placeholder="nombreapellido@mail.com">
+                <small></small>
+              </div>
+              <div class="register-input">
+                <label for="register_phone">Telefono:</label>
+                <input type="number" id="register_phone" class="input_phone" placeholder="+5412345678">
+                <small></small>
+              </div>
+              
+              <div class="register-input">
+                <label for="register_born">Fecha de nacimiento:</label>
+                <input type="date" id="register_born" min="1930-01-01" max="2022-01-01">
+              </div>
+              
+              
+              <label for="register_city">¿En qué provincia vivís?</label>
+              <select name="ciudad" id="register_city">
+                <option value="ciudad">Buenos Aires</option>
+                <option value="ciudad">Ciudad Autónoma de Buenos Aires</option>
+                <option value="ciudad">Catamarca</option>
+                <option value="ciudad">Chaco</option>
+                <option value="ciudad">Chubut</option>
+                <option value="ciudad">Córdoba</option>
+                <option value="ciudad">Corrientes</option>
+                <option value="ciudad">Entre Ríos</option>
+                <option value="ciudad">Formosa</option>
+                <option value="ciudad">Jujuy</option>
+                <option value="ciudad">La Pampa</option>
+                <option value="ciudad">La Rioja</option>
+                <option value="ciudad">Mendoza</option>
+                <option value="ciudad">Misiones</option>
+                <option value="ciudad">Neuquén</option>
+                <option value="ciudad">Río Negro</option>
+                <option value="ciudad">Salta</option>
+                <option value="ciudad">San Juan</option>
+                <option value="ciudad">San Luis</option>
+                <option value="ciudad">Santa Cruz</option>
+                <option value="ciudad">Santa Fe</option>
+                <option value="ciudad">Santiago del Estero</option>
+                <option value="ciudad">Tierra del Fuego</option>
+                <option value="ciudad">Tucumán</option>
+              </select>
+              <div class="forms-mensaje">
+                <input type="checkbox" id="forms_info">
+                <label for="forms_info">Deseo recibir información sobre productos y novedades en la tienda</label>
+              </div>
+              <div class="boton-enviar">
+                <input type="submit" value="Enviar">
+            </div>
+            </form> 
+          </div>
+          <div class="registro-der">
+            <div class="registro-img">
+              <img src="img/istockphoto-1300326346-612x612.jpg" alt="ilustración">
+            </div>
+            <div class="registro-iniciasesion">
+            <p>¿Ya tenés cuenta?</p>
+            <a href="iniciarsesion.html">Iniciá Sesión</a>
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="logo-footer">
+        <img src="img/logosolo.png" alt="logo">
+        <div class="logo-footer-p">
+          <p>game over</p>
+        </div>
+      </div>  
+      <div class="footer-p">
+        <p>Todos los derechos reservados © 2023</p>
+      </div>
+    </footer> 
+    <script src="js/registro.js"></script>
+    
+</body>
+</html>

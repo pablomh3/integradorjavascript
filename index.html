@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home | Game Over</title>
+    <link rel="icon" type="img/png" href="img/logo.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/mediaqueries.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-img">
+      <a href="index.html"><img src="img/logo-nombre1.png" alt="logo" class="logo"></a>
+    </div>
+    <nav class="navbar"> 
+      <div class="menu-label">
+        <img src="img/menu.svg" alt="menu" class="menu-icon">
+      </div>
+      <ul class="navbar-list">
+        <li>
+          <a class="navbar-link" href="#">Home</a>
+        </li>
+        <li>
+          <a class="navbar-link" href="#beneficios">Club de Beneficios</a>
+        </li>
+        <li>
+          <a class="navbar-link" href="#productos">Productos</a>
+        </li>
+        <li>
+            <a class="navbar-link" href="#contact">Contacto</a>
+        </li>
+      </ul>
+      <div class="cart-label">
+          <img src="./img/shopping-cart.svg" alt="Carrito de compras" class="cart-icon"/> 
+    </div>
+      <div class="cart">
+        <h2>Tu carrito</h2>
+        <div class="cart-container">
+          
+        </div>
+        <span class="divider"></span>
+        <div class="cart-total">
+          <p>Total:</p>
+          <span class="total"></span>
+        </div>
+        <button class="cart-button">COMPRAR</button>
+        <button class="cart-button-empty">Vaciar carrito</button>
+      </div>
+      <div class="overlay"></div>
+    </nav>
+  </header>
+    <main>
+      <section id="hero">
+        <div class="hero-container-izq">
+          <div class="hero-h1">
+            <h1> Bienvenido al mundo gamer</h1>
+          </div>
+          <div class="hero-h3">
+            <h3>Juegues en PC, consola old o new gen, <span>game over</span> te proveerá del más completo catálogo de productos vinculado a videojuegos para que la diversión no termine nunca. Además, registrate en nuestro club exclusivo y recibí beneficios imperdibles.</h3>
+          </div>
+        </div>
+       <div class="hero-container-der">
+        <div class="hero-img">
+          <img src="img/istockphoto-1313854295-612x612.jpg" alt="portada">
+        </div>
+       </div>
+      </section>
+      <section id="beneficios">
+        <div class="beneficios-h2">
+          <h2>Convertite en cliente y accedé a beneficios</h2>
+        </div>
+        <div class="beneficios-container">
+          <div class="beneficios-izq">
+            <div class="beneficios-img">
+              <img src="img/istockphoto-1046595324-612x612.jpg" alt="beneficios">
+            </div>
+          </div>
+          <div class="beneficios-der">
+            <div class="beneficios-h3">
+              <h3>Formá parte del club de <span>game over</span> y convertite en un gamer distinguido <img src="img/emojifacha.png" alt="carita">. Accedé a descuentos en tus compras y envío gratis a la puerta de tu casa. Además, sumá puntos y participá de sorteos solo para miembros. Registrate gratis en tres simples pasos y comenzá a disfrutar, o iniciá sesión y seguí acumulando beneficios.</h3>
+            </div>
+              <div class="beneficios-boton">
+                <a href="registro.html" target="_blank" class="boton1">Registrarse</a>
+                <a href="iniciarsesion.html" target="_blank" class="boton2">Iniciar Sesión</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="productos">
+        <div class="productos-h2">
+          <h2><img src="img/fuego.png" alt="emoji">Productos<img src="img/fuego.png" alt="emoji"></h2>
+        </div>
+        <div class="productos-container">
+          <button class="producto-seccion active">Todos</button>
+          <button class="producto-seccion" data-category="Consolas">Consolas</button>
+          <button class="producto-seccion" data-category="PC y componentes">PC y componentes</button>
+          <button class="producto-seccion" data-category="Perifericos">Perifericos</button>
+        </div>
+        <div class="productos-cards">
+          
+        </div> 
+        <div class="cards-vermas">
+          <button class="btn-vermas">Ver más productos</button>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact-h2">
+          <h2>¡Contactate con nosotros!</h2>
+        </div>
+        <div class="contact-container">
+          <div class="contact-izq">
+            <div class="contact-h3">
+              <h3>Dejá tu consulta, ¡respondemos de inmediato!</h3>
+            </div>
+            <form class="contact-form">
+              <div class="form-input">
+                <label for="contact_name">Nombre:</label>
+                <input type="text" id="contact_name" class="input_name" placeholder="Tu Nombre">
+                <small></small>
+              </div>
+              <div class="form-input">
+                <label for="contact_last">Apellido:</label>
+                <input type="text"id="contact_last" class="input_last"placeholder="Tu Apellido">
+                <small></small>
+              </div>
+              <div class="form-input">
+                <label for="contact_mail">Email:</label>
+                <input type="email" id="contact_mail" class="input_mail"placeholder="nombreapellido@mail.com">
+                <small></small>
+              </div>
+              <div class="form-input">
+                <label for="contact_phone">Telefono:</label>
+                <input type="number" id="contact_phone" class="input_phone"placeholder="1123456789">
+                <small></small>
+              </div>
+              <div class="form-input">
+                <label for="contact_message">Consulta:</label>
+                <input type="text" id="contact_message" class="input_message"placeholder="Dejanos un mensaje" >
+                <small></small>
+              </div>
+              <div class="forms-mensaje">
+                <input type="checkbox" id="info">
+                <label for="info">Deseo recibir información sobre productos y novedades en la tienda</label>
+              </div>
+              <div class="boton-enviar">
+                  <input type="submit" value="Enviar">
+              </div>
+             
+            </form>
+            
+          </div>
+          <div class="contact-der">
+            <div class="contact-h3">
+              <h3>Vení a conocer nuestra sucursal de lunes a viernes de 10 a 19</h3>
+            </div>
+            <div class="iframe">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0514584472653!2d-58.42455958417498!3d-34.602860264960974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca63f2b17d91%3A0x3b5b02b8be14e1c8!2sAv.%20Corrientes%204095%2C%20C1194%20AAG%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1665181219314!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contacto-datos">
+              <a href="#"><img src="img/map-pin.svg" alt="mapa"> Avenida Corrientes 4095, CABA</a>
+              <a href="#"><img src="img/phone-call.svg" alt="celular">(+54)11-496-7207</a>
+              <a href="#"><img src="img/instagram.svg" alt="Instagram">gameoveroficial</a>
+              <a href="#"><img src="img/twitch.svg" alt="Twitch">gameoverok</a>
+              <a href="#"><img src="img/twitter.svg" alt="twitter">@gameoveroficial</a>
+              <a href="#"><img src="img/facebook.svg" alt="Facebook">gameovertiendaoficial</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="logo-footer">
+        <img src="img/logosolo.png" alt="logo">
+        <div class="logo-footer-p">
+          <p>game over</p>
+        </div>
+      </div>  
+      <div class="footer-p">
+        <p>Todos los derechos reservados © 2023</p>
+      </div>
+    </footer>
+    <div class="add-modal"></div>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
